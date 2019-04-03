@@ -7,9 +7,9 @@
 
 .#{$ns}-tooltip {
   @include popover-sizing(
-    $arrow-square-size: 22px,
-    $arrow-offset: 3px,
-    $arrow-target-offset: -4px
+    $arrow-square-size: $pt-custom-22pixel,
+    $arrow-offset: $pt-custom-3pixel,
+    $arrow-target-offset: -$pt-custom-4pixel
   );
   @include popover-appearance(
     $tooltip-background-color,

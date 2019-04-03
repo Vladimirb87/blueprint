@@ -71,8 +71,8 @@ $pt-dark-intent-text-colors: (
   word-wrap: normal;
 }
 
-@mixin focus-outline($offset: 2px) {
-  outline: $pt-outline-color auto 2px;
+@mixin focus-outline($offset: $pt-custom-2pixel) {
+  outline: $pt-outline-color auto $pt-custom-2pixel;
   outline-offset: $offset;
   -moz-outline-radius: 6px;
 }

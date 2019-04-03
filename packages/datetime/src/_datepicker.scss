@@ -20,6 +20,8 @@ $header-margin: ($header-height - $pt-input-height) / 2 !default;
 // react-day-picker does not conform to our naming scheme
 // stylelint-disable selector-class-pattern
 .#{$ns}-datepicker {
+  color: $pt-dark-text-color-muted;
+  font-size: $pt-font-size;
   position: relative;
   border-radius: $pt-border-radius;
   background: $datepicker-background-color;

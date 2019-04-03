@@ -4,6 +4,9 @@
 $tag-default-color: $gray1 !default;
 $dark-tag-default-color: $gray5 !default;
 
+// customization
+$tag-custom-spacing: 1.2rem;
+
 $tag-height: $pt-grid-size * 2 !default;
 $tag-line-height: $pt-icon-size-standard !default;
 $tag-padding-top: ($tag-height - $tag-line-height) / 2 !default;
@@ -14,10 +17,10 @@ $tag-height-large: $pt-grid-size * 3 !default;
 $tag-line-height-large: $pt-icon-size-large !default;
 $tag-padding-large: ($tag-height-large - $tag-line-height-large) !default;
 
-$tag-icon-spacing: ($tag-height - 12px) / 2 !default;
+$tag-icon-spacing: ($tag-height - $tag-custom-spacing) / 2 !default;
 $tag-icon-spacing-large: ($tag-height-large - $pt-icon-size-standard) / 2 !default;
 
-$tag-round-adjustment: 2px !default;
+$tag-round-adjustment: $pt-custom-2pixel !default;
 
 @mixin pt-tag() {
   @include pt-tag-interactive($tag-default-color, 1);

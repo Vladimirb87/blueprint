@@ -40,7 +40,7 @@
 
   .#{$ns}-icon {
     // reduce margins around icon so it fits better in tight header
-    margin: 0 2px;
+    margin: 0 $pt-custom-2pixel;
   }
 }
 

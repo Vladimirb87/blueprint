@@ -85,7 +85,7 @@ Styleguide breadcrumbs
 }
 
 .#{$ns}-breadcrumbs-collapsed {
-  margin-right: 2px;
+  margin-right: $pt-custom-2pixel;
   border: none;
   border-radius: $pt-border-radius;
   background: $light-gray1;
