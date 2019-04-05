@@ -3,7 +3,7 @@
 
 $half-grid-size: $pt-grid-size / 2 !default;
 
-$menu-item-border-radius: $pt-border-radius - 1 !default;
+$menu-item-border-radius: $pt-border-radius - rem(1px) !default;
 
 // Set line-height of menu items to be a multiple of the font size. This is
 // needed because if the line-height does not extend far enough past the font's
@@ -123,7 +123,7 @@ $dark-menu-item-color-active: $dark-minimal-button-background-color-active !defa
 @mixin menu-divider() {
   display: block;
   margin: $half-grid-size;
-  border-top: 1px solid $pt-divider-black;
+  border-top:  rem(1px) solid $pt-divider-black;
 
   .#{$ns}-dark & {
     border-top-color: $pt-dark-divider-white;
@@ -154,9 +154,9 @@ $dark-menu-item-color-active: $dark-minimal-button-background-color-active !defa
   @include heading-typography();
   @include overflow-ellipsis();
   margin: 0;
-  padding: $pt-grid-size $menu-item-padding 0 1px;
+  padding: $pt-grid-size $menu-item-padding 0  rem(1px);
   // a little extra space to avoid clipping descenders (because overflow hidden)
-  line-height: $pt-icon-size-standard + $pt-custom-pixel;
+  line-height: $pt-icon-size-standard +  rem(1px);
 }
 
 @mixin menu-header-large($heading-selector) {

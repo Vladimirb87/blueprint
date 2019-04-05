@@ -85,7 +85,7 @@ $dark-navbar-background-color: $dark-gray5 !default;
 
 .#{$ns}-navbar-divider {
   margin: 0 $pt-grid-size;
-  border-left: 1px solid $pt-divider-black;
+  border-left:  rem(1px) solid $pt-divider-black;
   height: $pt-navbar-height - $pt-grid-size * 3;
 
   .#{$ns}-dark & {
@@ -98,7 +98,7 @@ Fixed width
 
 Markup:
 <nav class="#{$ns}-navbar #{$ns}-dark">
-  <div style="margin: 0 auto; width: 480px;"> <!-- ADD ME -->
+  <div style="margin: 0 auto; width:  rem(480px);"> <!-- ADD ME -->
     <div class="#{$ns}-navbar-group #{$ns}-align-left">
       <div class="#{$ns}-navbar-heading">Blueprint</div>
     </div>

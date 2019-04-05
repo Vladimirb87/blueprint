@@ -31,12 +31,12 @@ Styleguide headings
 
 // tag: (font-size, line-height)
 $headings: (
-  "h1": (36px, 40px),
-  "h2": (28px, 32px),
-  "h3": (22px, 25px),
-  "h4": (18px, 21px),
-  "h5": (16px, 19px),
-  "h6": (14px, 16px)
+  "h1": ( rem(36px),  rem(40px)),
+  "h2": ( rem(28px),  rem(32px)),
+  "h3": ( rem(22px),  rem(25px)),
+  "h4": ( rem(18px),  rem(21px)),
+  "h5": ( rem(16px),  rem(19px)),
+  "h6": ( rem(14px),  rem(16px))
 ) !default;
 
 @each $tag, $props in $headings {
@@ -144,7 +144,7 @@ Styleguide running-text
   hr {
     margin: ($pt-grid-size * 2) 0;
     border: none;
-    border-bottom: 1px solid $pt-divider-black;
+    border-bottom:  rem(1px) solid $pt-divider-black;
 
     .#{$ns}-dark & {
       border-color: $pt-dark-divider-white;
@@ -261,7 +261,7 @@ Styleguide preformatted
   border-radius: $pt-border-radius;
   box-shadow: inset border-shadow(0.2);
   background: $pt-code-background-color;
-  padding: $pt-custom-2pixel 5px;
+  padding:  rem(2px)  rem(5px);
   color: $pt-code-text-color;
   font-size: smaller;
 
@@ -288,17 +288,17 @@ Styleguide preformatted
   display: block;
   margin: $pt-grid-size 0;
   border-radius: $pt-border-radius;
-  box-shadow: inset 0 0 0 1px $pt-divider-black;
+  box-shadow: inset 0 0 0  rem(1px) $pt-divider-black;
   background: $pt-code-background-color;
   padding: ($pt-grid-size * 1.3) ($pt-grid-size * 1.5) ($pt-grid-size * 1.2);
   line-height: 1.4;
   color: $pt-text-color;
-  font-size: $pt-font-size - $pt-custom-pixel;
+  font-size: $pt-font-size -  rem(1px);
   word-break: break-all;
   word-wrap: break-word;
 
   .#{$ns}-dark & {
-    box-shadow: inset 0 0 0 1px $pt-dark-divider-black;
+    box-shadow: inset 0 0 0  rem(1px) $pt-dark-divider-black;
     background: $pt-dark-code-background-color;
     color: $pt-dark-text-color;
   }
@@ -367,7 +367,7 @@ Styleguide blockquote
 
 %blockquote {
   margin: 0 0 $pt-grid-size;
-  border-left: solid $pt-custom-4pixel rgba($gray4, 0.5);
+  border-left: solid  rem(4px) rgba($gray4, 0.5);
   padding: 0 ($pt-grid-size * 2);
 
   .#{$ns}-dark & {

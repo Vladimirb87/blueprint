@@ -7,9 +7,9 @@ $popover-width: $pt-grid-size * 35 !default;
 
 .#{$ns}-popover {
   @include popover-sizing(
-    $arrow-square-size: $pt-custom-30pixel,
-    $arrow-offset: $pt-custom-4pixel,
-    $arrow-target-offset: -$pt-custom-4pixel
+    $arrow-square-size:  rem(30px),
+    $arrow-offset:  rem(4px),
+    $arrow-target-offset: - rem(4px)
   );
   @include popover-appearance(
     $popover-background-color,
@@ -78,7 +78,7 @@ $popover-width: $pt-grid-size * 35 !default;
   display: block;
   position: absolute;
   transform: rotate(45deg);
-  border-radius: $pt-border-radius - 1;
+  border-radius: $pt-border-radius - rem(1px);
   content: "";
 }
 
@@ -94,7 +94,7 @@ $popover-width: $pt-grid-size * 35 !default;
 .#{$ns}-transition-container {
   @include fade-transition();
 
-  // ensure element size exactly equals its children, no edge-case 4px spacing!
+  // ensure element size exactly equals its children, no edge-case  rem(4px) spacing!
   // (try removing this property with Slider content in example)
   display: flex;
   z-index: $pt-z-index-overlay;

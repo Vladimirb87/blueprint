@@ -50,7 +50,7 @@ $menu-z-index: $row-z-index + 1 !default;
   .#{$ns}-table-container.#{$ns}-table-no-rows & {
     // edge case when there are no rows: keep bottom borders visible on menu
     // element and column headers
-    padding-bottom: 1px;
+    padding-bottom:  rem(1px);
   }
 }
 
@@ -150,7 +150,7 @@ $menu-z-index: $row-z-index + 1 !default;
 
 .#{$ns}-table-scrollbar-measure {
   position: absolute;
-  top: -9999px;
+  top: - rem(9999px);
   width: $pt-grid-size * 10;
   height: $pt-grid-size * 10;
   overflow: scroll;

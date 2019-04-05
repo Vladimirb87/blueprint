@@ -23,7 +23,7 @@ $attribute-modifier-color: $violet5;
 
 // this element inside the <h*> tag creates extra space above when it is targeted by the location hash
 // but it doesn't change the bounds of the element or interfere with interactions. (thanks React docs site!)
-// so the heading will appear _below_ the navbar (since the navbar covers the top 50px of window).
+// so the heading will appear _below_ the navbar (since the navbar covers the top  rem(50px) of window).
 .docs-anchor {
   position: absolute;
   margin-top: -$content-padding * 2;
@@ -72,7 +72,7 @@ $attribute-modifier-color: $violet5;
     + span {
       border-radius: $pt-border-radius;
       background: rgba($attribute-modifier-color, 0.15);
-      padding: 0 3px;
+      padding: 0  rem(3px);
       color: $attribute-modifier-color;
     }
 

@@ -13,12 +13,12 @@
     background: $dark-gray4;
 
     .#{$ns}-datepicker {
-      border-bottom: 1px solid $pt-dark-divider-black;
+      border-bottom:  rem(1px) solid $pt-dark-divider-black;
     }
   }
 
   .#{$ns}-datepicker {
-    border-bottom: 1px solid $pt-divider-black;
+    border-bottom:  rem(1px) solid $pt-divider-black;
     padding: 0 0 $pt-grid-size;
   }
 

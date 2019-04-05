@@ -4,10 +4,10 @@
 @import "~@blueprintjs/icons/src/icons";
 
 $palette-spacing: $pt-grid-size * 2;
-$palette-border-radius: 4px;
+$palette-border-radius:  rem(4px);
 
 $swatch-height: $pt-input-height-large;
-$swatch-hover-offset: -4px;
+$swatch-hover-offset: - rem(4px);
 
 $swatch-hover-message: "Click to copy hex code";
 $swatch-copied-message: "#{$pt-icon-tick} Copied to clipboard";
@@ -128,7 +128,7 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
   }
 
   &.selected::before {
-    box-shadow: border-shadow(1, $pt-intent-primary, 2px);
+    box-shadow: border-shadow(1, $pt-intent-primary,  rem(2px));
   }
 
   .docs-color-scheme & {
@@ -140,20 +140,20 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
 .docs-color-swatch {
   display: block;
   position: relative;
-  border: 1px solid rgba($black, $pt-border-shadow-opacity * 2);
+  border:  rem(1px) solid rgba($black, $pt-border-shadow-opacity * 2);
   border-top-width: 0;
   border-bottom-width: 0;
   height: $swatch-height;
   font-family: $pt-font-family-monospace;
 
   &:first-child {
-    border-top-width: 1px;
+    border-top-width:  rem(1px);
     border-top-left-radius: $pt-border-radius;
     border-top-right-radius: $pt-border-radius;
   }
 
   &:last-child {
-    border-bottom-width: 1px;
+    border-bottom-width:  rem(1px);
     border-bottom-left-radius: $pt-border-radius;
     border-bottom-right-radius: $pt-border-radius;
   }
@@ -164,14 +164,14 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
     z-index: $pt-z-index-base + 1;
     border-radius: $pt-border-radius;
     box-shadow: inset border-shadow($pt-border-shadow-opacity * 2),
-                      0 2px 4px rgba($black, $pt-drop-shadow-opacity / 2),
-                      0 8px 24px rgba($black, $pt-drop-shadow-opacity);
+                      0  rem(2px)  rem(4px) rgba($black, $pt-drop-shadow-opacity / 2),
+                      0  rem(8px)  rem(24px) rgba($black, $pt-drop-shadow-opacity);
   }
 
   &:active .docs-color-swatch-trigger {
     @include position-all(absolute, $swatch-hover-offset / 2);
     box-shadow: inset border-shadow($pt-border-shadow-opacity * 2),
-                0 1px 1px rgba($black, $pt-drop-shadow-opacity);
+                0  rem(1px)  rem(1px) rgba($black, $pt-drop-shadow-opacity);
   }
 
   .#{$ns}-dark & {
@@ -179,13 +179,13 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
 
     &:hover .docs-color-swatch-trigger {
       box-shadow: inset border-shadow($pt-dark-border-shadow-opacity, $color: $white),
-                  0 2px 4px rgba($black, $pt-dark-drop-shadow-opacity / 2),
-                  0 8px 24px rgba($black, $pt-dark-drop-shadow-opacity);
+                  0  rem(2px)  rem(4px) rgba($black, $pt-dark-drop-shadow-opacity / 2),
+                  0  rem(8px)  rem(24px) rgba($black, $pt-dark-drop-shadow-opacity);
     }
 
     &:active .docs-color-swatch-trigger {
       box-shadow: inset border-shadow($pt-dark-border-shadow-opacity, $color: $white),
-                  0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity);
+                  0  rem(1px)  rem(1px) rgba($black, $pt-dark-drop-shadow-opacity);
     }
   }
 }
@@ -211,9 +211,9 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
 .docs-color-bar-swatches {
   display: flex;
   position: relative;
-  top: -1px;
-  margin-left: -1px;
-  width: calc(100% + 2px);
+  top: - rem(1px);
+  margin-left: - rem(1px);
+  width: calc(100% +  rem(2px));
 
   &::before {
     @include position-all(absolute, 0);
@@ -221,13 +221,13 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
     display: block;
     z-index: 2;
     border-radius: $pt-border-radius;
-    box-shadow: inset 0 0 0 1px $pt-divider-black;
+    box-shadow: inset 0 0 0  rem(1px) $pt-divider-black;
     content: "";
     pointer-events: none;
     user-select: none;
 
     .#{$ns}-dark & {
-      box-shadow: inset 0 0 0 1px $pt-dark-divider-white;
+      box-shadow: inset 0 0 0  rem(1px) $pt-dark-divider-white;
     }
   }
 

@@ -30,7 +30,7 @@ Markup:
 <div class="#{$ns}-control-group">
   <div class="#{$ns}-input-group">
     <span class="#{$ns}-icon #{$ns}-icon-people"></span>
-    <input type="text" class="#{$ns}-input" placeholder="Find collaborators..." style="padding-right:94px" />
+    <input type="text" class="#{$ns}-input" placeholder="Find collaborators..." style="padding-right: rem(94px)" />
     <div class="#{$ns}-input-action">
       <button class="#{$ns}-button #{$ns}-minimal #{$ns}-intent-primary">
         can view<span class="#{$ns}-icon-standard #{$ns}-icon-caret-down #{$ns}-align-right"></span>
@@ -243,7 +243,7 @@ Styleguide control-group
   Vertical control groups
 
   Markup:
-  <div class="#{$ns}-control-group #{$ns}-vertical" style="width: 300px;">
+  <div class="#{$ns}-control-group #{$ns}-vertical" style="width:  rem(300px);">
     <div class="#{$ns}-input-group #{$ns}-large">
       <span class="#{$ns}-icon #{$ns}-icon-person"></span>
       <input type="text" class="#{$ns}-input" placeholder="Username" />

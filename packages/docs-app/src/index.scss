@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0.
 
 */
 
-@import "~normalize.css/normalize.css";
+// @import "~normalize.css/normalize.css";
 
 // import these first because they're the base layer
 @import "~@blueprintjs/core/lib/css/blueprint.css";
@@ -30,7 +30,7 @@ Licensed under the Apache License, Version 2.0.
 
 
 .docs-releases-menu .#{$ns}-menu {
-  min-width: 270px;
+  min-width:  rem(270px);
 }
 
 // remove padding on left side of tables in documentation

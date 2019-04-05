@@ -7,9 +7,9 @@
 
 .#{$ns}-tooltip {
   @include popover-sizing(
-    $arrow-square-size: $pt-custom-22pixel,
-    $arrow-offset: $pt-custom-3pixel,
-    $arrow-target-offset: -$pt-custom-4pixel
+    $arrow-square-size:  rem(22px),
+    $arrow-offset:  rem(3px),
+    $arrow-target-offset: - rem(4px)
   );
   @include popover-appearance(
     $tooltip-background-color,
@@ -56,6 +56,6 @@
 }
 
 .#{$ns}-tooltip-indicator {
-  border-bottom: dotted 1px;
+  border-bottom: dotted  rem(1px);
   cursor: help;
 }

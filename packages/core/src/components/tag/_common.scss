@@ -17,10 +17,17 @@ $tag-height-large: $pt-grid-size * 3 !default;
 $tag-line-height-large: $pt-icon-size-large !default;
 $tag-padding-large: ($tag-height-large - $tag-line-height-large) !default;
 
+<<<<<<< Updated upstream
 $tag-icon-spacing: ($tag-height - $tag-custom-spacing) / 2 !default;
 $tag-icon-spacing-large: ($tag-height-large - $pt-icon-size-standard) / 2 !default;
 
 $tag-round-adjustment: $pt-custom-2pixel !default;
+=======
+$tag-icon-spacing: ($tag-height -  rem(12px)) / 2 !default;
+$tag-icon-spacing-large: ($tag-height-large - $pt-icon-size-standard) / 2 !default;
+
+$tag-round-adjustment:  rem(2px) !default;
+>>>>>>> Stashed changes
 
 @mixin pt-tag() {
   @include pt-tag-interactive($tag-default-color, 1);

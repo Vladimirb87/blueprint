@@ -5,7 +5,7 @@
 @import "../../common/variables";
 @import "../progress-bar/common";
 
-$button-border-width: 1px !default;
+$button-border-width:  rem(1px) !default;
 $button-padding: ($pt-grid-size / 2) $pt-grid-size !default;
 $button-padding-small: 0 ($pt-grid-size * 0.7) !default;
 $button-padding-large: ($pt-grid-size / 2) ($pt-grid-size * 1.5) !default;
@@ -26,13 +26,13 @@ $button-box-shadow:
   inset 0 (-$button-border-width) 0 rgba($black, 0.1) !default;
 $button-box-shadow-active:
   inset 0 0 0 $button-border-width rgba($black, 0.2),
-  inset 0 1px $pt-custom-2pixel rgba($black, 0.2) !default;
+  inset 0  rem(1px)  rem(2px) rgba($black, 0.2) !default;
 $button-intent-box-shadow:
   inset 0 0 0 $button-border-width rgba($black, 0.4),
   inset 0 (-$button-border-width) 0 rgba($black, 0.2) !default;
 $button-intent-box-shadow-active:
   inset 0 0 0 $button-border-width rgba($black, 0.4),
-  inset 0 1px $pt-custom-2pixel rgba($black, 0.2) !default;
+  inset 0  rem(1px)  rem(2px) rgba($black, 0.2) !default;
 
 /*
 Overlay shadows are used for default buttons
@@ -42,21 +42,21 @@ Switches and slider handles both use these variables.
 */
 $button-box-shadow-overlay:
   0 0 0 $button-border-width rgba($black, 0.2),
-  0 1px 1px rgba($black, 0.2) !default;
+  0  rem(1px)  rem(1px) rgba($black, 0.2) !default;
 $button-box-shadow-overlay-active:
   0 0 0 $button-border-width rgba($black, 0.2),
-  inset 0 1px 1px rgba($black, 0.1) !default;
+  inset 0  rem(1px)  rem(1px) rgba($black, 0.1) !default;
 
 $dark-button-box-shadow:
   0 0 0 $button-border-width rgba($black, 0.4) !default;
 $dark-button-box-shadow-active:
   0 0 0 $button-border-width rgba($black, 0.6),
-  inset 0 1px $pt-custom-2pixel rgba($black, 0.2) !default;
+  inset 0  rem(1px)  rem(2px) rgba($black, 0.2) !default;
 $dark-button-intent-box-shadow:
   0 0 0 $button-border-width rgba($black, 0.4) !default;
 $dark-button-intent-box-shadow-active:
   0 0 0 $button-border-width rgba($black, 0.4),
-  inset 0 1px $pt-custom-2pixel rgba($black, 0.2) !default;
+  inset 0  rem(1px)  rem(2px) rgba($black, 0.2) !default;
 
 $button-gradient: linear-gradient(to bottom, rgba($white, 0.8), rgba($white, 0)) !default;
 $button-intent-gradient: linear-gradient(to bottom, rgba($white, 0.1), rgba($white, 0)) !default;
@@ -77,7 +77,7 @@ $dark-button-background-color-disabled: rgba($dark-gray5, 0.5) !default;
 $dark-button-background-color-active-disabled: rgba($dark-gray5, 0.7) !default;
 $dark-button-intent-color-disabled: rgba($white, 0.3);
 
-$minimal-button-divider-width: 1px !default;
+$minimal-button-divider-width:  rem(1px) !default;
 $minimal-button-background-color: none !default;
 $minimal-button-background-color-hover: rgba($gray4, 0.3) !default;
 $minimal-button-background-color-active: rgba($gray2, 0.3) !default;

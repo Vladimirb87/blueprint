@@ -28,7 +28,7 @@ body.#{$ns}-dark {
 
 #page-content {
   position: absolute;
-  top: 50px;
+  top:  rem(50px);
   left: 0;
   bottom: 0;
   right: 0;
@@ -82,25 +82,25 @@ body.#{$ns}-dark {
 
 .sidebar {
   background-color: #EBF1F5;
-  flex: 0 0 300px;
+  flex: 0 0  rem(300px);
   height: 100%;
   order: 1;
   overflow-y: auto;
-  padding: 0 15px 15px;
+  padding: 0  rem(15px)  rem(15px);
   z-index: 3;
 }
 
 .#{$ns}-dark .sidebar {
   background-color: #202B33;
-  box-shadow: 0 0 0 1px #182026; /* override pt-elevation-0 styles */
+  box-shadow: 0 0 0  rem(1px) #182026; /* override pt-elevation-0 styles */
   z-index: 1;
 }
 
 .sidebar h4 {
-  border-top: 1px solid #BFCCD6;
-  font-size: 14px;
-  margin: 15px -15px 0;
-  padding: 20px 15px 12px;
+  border-top:  rem(1px) solid #BFCCD6;
+  font-size:  rem(14px);
+  margin:  rem(15px) - rem(15px) 0;
+  padding:  rem(20px)  rem(15px)  rem(12px);
   text-transform: uppercase;
 }
 
@@ -111,10 +111,10 @@ body.#{$ns}-dark {
 
 .sidebar h6 {
   color: #5C7080;
-  font-size: 14px;
+  font-size:  rem(14px);
   font-weight: normal;
-  line-height: 12px;
-  padding: 10px 0 3px;
+  line-height:  rem(12px);
+  padding:  rem(10px) 0  rem(3px);
 }
 
 .#{$ns}-dark .sidebar h4 {
@@ -127,16 +127,16 @@ body.#{$ns}-dark {
 }
 
 .sidebar-indented-group {
-  margin-left: 15px;
+  margin-left:  rem(15px);
 }
 
 .sidebar > .#{$ns}-button + .#{$ns}-button {
-  margin-top: 3px;
+  margin-top:  rem(3px);
 }
 
 label.tbl-select-label {
-  margin-top: -3px;
-  margin-bottom: 7px;
+  margin-top: - rem(3px);
+  margin-bottom:  rem(7px);
 }
 
 .tbl-select-label .#{$ns}-select {
@@ -148,17 +148,17 @@ label.tbl-select-label {
 }
 
 .tbl-styled-region-success {
-  border: 1px solid #0F9960;
+  border:  rem(1px) solid #0F9960;
   background-color: rgba(15, 153, 96, 0.1);
 }
 
 .tbl-styled-region-warning {
-  border: 1px solid #D9822B;
+  border:  rem(1px) solid #D9822B;
   background-color: rgba(217, 130, 43, 0.1);
 }
 
 .tbl-styled-region-danger {
-  border: 1px solid #DB3737;
+  border:  rem(1px) solid #DB3737;
   background-color: rgba(219, 55, 55, 0.1);
 }
 
@@ -168,7 +168,7 @@ label.tbl-select-label {
 
 .tbl-custom-column-header {
   line-height: 1;
-  padding: 7px 0;
+  padding:  rem(7px) 0;
 }
 
 .tbl-custom-column-header-name {
@@ -178,8 +178,8 @@ label.tbl-select-label {
 .tbl-custom-column-header-type {
   color: #5C7080; /* $gray1 */
   font-family: "Courier", monospace;
-  font-size: 12px;
-  margin-top: 3px;
+  font-size:  rem(12px);
+  margin-top:  rem(3px);
 }
 
 .#{$ns}-dark .tbl-custom-column-header-type {

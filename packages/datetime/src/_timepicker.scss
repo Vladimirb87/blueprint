@@ -6,9 +6,9 @@
 
 $timepicker-input-row-height: $pt-grid-size * 3 !default;
 // subtract two because of inset shadow
-$timepicker-input-row-inner-height: $timepicker-input-row-height - 2 !default;
+$timepicker-input-row-inner-height: $timepicker-input-row-height - rem(2px) !default;
 // helps focus states of inputs line up correctly
-$timepicker-row-padding: 0 1px !default;
+$timepicker-row-padding: 0  rem(1px) !default;
 $timepicker-divider-width: $pt-grid-size * 1.1 !default;
 $timepicker-control-width: $pt-grid-size * 3.3 !default;
 

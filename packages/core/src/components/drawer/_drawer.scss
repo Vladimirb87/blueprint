@@ -178,7 +178,7 @@ $drawer-default-size: 50%;
   align-items: center;
   position: relative;
   border-radius: 0;
-  box-shadow: 0 1px 0 $pt-divider-black;
+  box-shadow: 0  rem(1px) 0 $pt-divider-black;
   min-height: $pt-icon-size-large + $dialog-padding;
   padding: $dialog-padding / 4;
   padding-left: $dialog-padding;
@@ -202,7 +202,7 @@ $drawer-default-size: 50%;
   }
 
   .#{$ns}-dark & {
-    box-shadow: 0 1px 0 $pt-dark-divider-black;
+    box-shadow: 0  rem(1px) 0 $pt-dark-divider-black;
 
     .#{$ns}-icon-large,
     .#{$ns}-icon {
@@ -220,10 +220,10 @@ $drawer-default-size: 50%;
 .#{$ns}-drawer-footer {
   flex: 0 0 auto;
   position: relative;
-  box-shadow: inset 0 1px 0 $pt-divider-black;
+  box-shadow: inset 0  rem(1px) 0 $pt-divider-black;
   padding: $dialog-padding/2 $dialog-padding;
 
   .#{$ns}-dark & {
-    box-shadow: inset 0 1px 0 $pt-dark-divider-black;
+    box-shadow: inset 0  rem(1px) 0 $pt-dark-divider-black;
   }
 }

@@ -158,7 +158,7 @@ $header-margin: ($header-height - $pt-input-height) / 2 !default;
     font-weight: 600;
 
     + .#{$ns}-icon {
-      right: 2px;
+      right:  rem(2px);
     }
   }
 
@@ -173,7 +173,7 @@ $header-margin: ($header-height - $pt-input-height) / 2 !default;
 
 .#{$ns}-datepicker-year-select {
   flex-shrink: 1;
-  min-width: 60px;
+  min-width:  rem(60px);
 }
 
 .#{$ns}-datepicker-caption-measure {

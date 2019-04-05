@@ -8,25 +8,15 @@
 // Do not quote this value, for Less consumers.
 $ns: bp3 !default;
 
+$base-font: 12px; // Default
+
+@function  rem($pixels, $context: $base-font) {
+  @return ($pixels / $context) * 1rem;
+}
+
 // easily the most important variable, so it comes up top
 // (so other variables can use it to define themselves)
-$pt-grid-size: 0.7rem / 1.4 !default; // 10px;
-
-// customization
-$pt-custom-pixel: $pt-grid-size / 10;
-$pt-custom-2pixel: $pt-grid-size / 5;
-$pt-custom-3pixel: 3 * $pt-grid-size / 10;
-$pt-custom-4pixel: 4 * $pt-grid-size / 10;
-$pt-custom-6pixel: 6 * $pt-grid-size / 10;
-$pt-custom-8pixel: 8 * $pt-grid-size / 10;
-$pt-custom-12pixel: 12 * $pt-grid-size / 10;
-$pt-custom-18pixel: 18 * $pt-grid-size / 10;
-$pt-custom-16pixel: 16 * $pt-grid-size / 10;
-$pt-custom-20pixel: 20 * $pt-grid-size / 10;
-$pt-custom-22pixel: 22 * $pt-grid-size / 10;
-$pt-custom-24pixel: 24 * $pt-grid-size / 10;
-$pt-custom-30pixel: 30 * $pt-grid-size / 10;
-$pt-custom-46pixel: 46 * $pt-grid-size / 10;
+$pt-grid-size:  0.7rem / 1.4 !default; // 10px
 
 // see https://bitsofco.de/the-new-system-font-stack/
 $pt-font-family: "Open Sans" !default;
@@ -37,7 +27,7 @@ $pt-font-size: $pt-grid-size * 1.4 !default;
 $pt-font-size-large: $pt-grid-size * 1.6 !default;
 $pt-font-size-small: $pt-grid-size * 1.2 !default;
 
-// a little bit extra to ensure the height comes out to just over 18px (and browser rounds to 18px)
+// a little bit extra to ensure the height comes out to just over  rem(18px) (and browser rounds to  rem(18px))
 $pt-line-height: ($pt-grid-size * 1.8) / $pt-font-size + 0.0001 !default;
 
 // Icon variables
@@ -45,8 +35,8 @@ $pt-line-height: ($pt-grid-size * 1.8) / $pt-font-size + 0.0001 !default;
 $icons16-family: "Icons16" !default;
 $icons20-family: "Icons20" !default;
 
-$pt-icon-size-standard: $pt-custom-16pixel !default;
-$pt-icon-size-large: $pt-custom-20pixel !default;
+$pt-icon-size-standard:  rem(16px) !default;
+$pt-icon-size-large:  rem(20px) !default;
 
 // Grids & dimensions
 
@@ -79,37 +69,37 @@ $pt-dark-drop-shadow-opacity: $pt-drop-shadow-opacity * 2 !default;
 
 // Elevations
 // all shadow lists must be the same length to avoid flicker in transitions.
-$pt-elevation-shadow-0: 0 0 0 1px $pt-divider-black,
+$pt-elevation-shadow-0: 0 0 0  rem(1px) $pt-divider-black,
                         0 0 0 rgba($black, 0),
                         0 0 0 rgba($black, 0) !default;
 $pt-elevation-shadow-1: border-shadow($pt-border-shadow-opacity),
                         0 0 0 rgba($black, 0),
-                        0 1px 1px rgba($black, $pt-drop-shadow-opacity) !default;
+                        0  rem(1px)  rem(1px) rgba($black, $pt-drop-shadow-opacity) !default;
 $pt-elevation-shadow-2: border-shadow($pt-border-shadow-opacity),
-                        0 1px 1px rgba($black, $pt-drop-shadow-opacity),
-                        0 $pt-custom-2pixel $pt-custom-6pixel rgba($black, $pt-drop-shadow-opacity) !default;
+                        0  rem(1px)  rem(1px) rgba($black, $pt-drop-shadow-opacity),
+                        0  rem(2px)  rem(6px) rgba($black, $pt-drop-shadow-opacity) !default;
 $pt-elevation-shadow-3: border-shadow($pt-border-shadow-opacity),
-                        0 $pt-custom-2pixel $pt-custom-4pixel rgba($black, $pt-drop-shadow-opacity),
-                        0 $pt-custom-8pixel $pt-custom-24pixel rgba($black, $pt-drop-shadow-opacity) !default;
+                        0  rem(2px)  rem(4px) rgba($black, $pt-drop-shadow-opacity),
+                        0  rem(8px)  rem(24px) rgba($black, $pt-drop-shadow-opacity) !default;
 $pt-elevation-shadow-4: border-shadow($pt-border-shadow-opacity),
-                        0 $pt-custom-4pixel $pt-custom-8pixel rgba($black, $pt-drop-shadow-opacity),
-                        0 $pt-custom-18pixel $pt-custom-46pixel $pt-custom-6pixel rgba($black, $pt-drop-shadow-opacity) !default;
+                        0  rem(4px)  rem(8px) rgba($black, $pt-drop-shadow-opacity),
+                        0  rem(18px)  rem(46px)  rem(6px) rgba($black, $pt-drop-shadow-opacity) !default;
 
-$pt-dark-elevation-shadow-0: 0 0 0 1px $pt-dark-divider-black,
+$pt-dark-elevation-shadow-0: 0 0 0  rem(1px) $pt-dark-divider-black,
                              0 0 0 rgba($black, 0),
                              0 0 0 rgba($black, 0) !default;
 $pt-dark-elevation-shadow-1: border-shadow($pt-dark-border-shadow-opacity),
                              0 0 0 rgba($black, 0),
-                             0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity) !default;
+                             0  rem(1px)  rem(1px) rgba($black, $pt-dark-drop-shadow-opacity) !default;
 $pt-dark-elevation-shadow-2: border-shadow($pt-dark-border-shadow-opacity),
-                             0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity),
-                             0 $pt-custom-2pixel $pt-custom-6pixel rgba($black, $pt-dark-drop-shadow-opacity) !default;
+                             0  rem(1px)  rem(1px) rgba($black, $pt-dark-drop-shadow-opacity),
+                             0  rem(2px)  rem(6px) rgba($black, $pt-dark-drop-shadow-opacity) !default;
 $pt-dark-elevation-shadow-3: border-shadow($pt-dark-border-shadow-opacity),
-                             0 $pt-custom-2pixel $pt-custom-4pixel rgba($black, $pt-dark-drop-shadow-opacity),
-                             0 $pt-custom-8pixel $pt-custom-24pixel rgba($black, $pt-dark-drop-shadow-opacity) !default;
+                             0  rem(2px)  rem(4px) rgba($black, $pt-dark-drop-shadow-opacity),
+                             0  rem(8px)  rem(24px) rgba($black, $pt-dark-drop-shadow-opacity) !default;
 $pt-dark-elevation-shadow-4: border-shadow($pt-dark-border-shadow-opacity),
-                             0 $pt-custom-4pixel $pt-custom-8pixel rgba($black, $pt-dark-drop-shadow-opacity),
-                             0 $pt-custom-18pixel $pt-custom-46pixel $pt-custom-6pixel rgba($black, $pt-dark-drop-shadow-opacity) !default;
+                             0  rem(4px)  rem(8px) rgba($black, $pt-dark-drop-shadow-opacity),
+                             0  rem(18px)  rem(46px)  rem(6px) rgba($black, $pt-dark-drop-shadow-opacity) !default;
 
 // Transitions
 $pt-transition-ease: cubic-bezier(0.4, 1, 0.75, 0.9) !default;
@@ -119,7 +109,7 @@ $pt-transition-duration: 100ms !default;
 // Light theme styles
 
 $pt-input-box-shadow: inset border-shadow(0.15),
-                      inset 0 1px 1px rgba($black, $pt-drop-shadow-opacity) !default;
+                      inset 0  rem(1px)  rem(1px) rgba($black, $pt-drop-shadow-opacity) !default;
 
 $pt-dialog-box-shadow: $pt-elevation-shadow-4 !default;
 $pt-popover-box-shadow: $pt-elevation-shadow-3 !default;
@@ -128,7 +118,7 @@ $pt-tooltip-box-shadow: $pt-popover-box-shadow !default;
 // Dark theme styles
 
 $pt-dark-input-box-shadow: inset border-shadow(0.3),
-                           inset 0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity) !default;
+                           inset 0  rem(1px)  rem(1px) rgba($black, $pt-dark-drop-shadow-opacity) !default;
 
 $pt-dark-dialog-box-shadow: $pt-dark-elevation-shadow-4 !default;
 $pt-dark-popover-box-shadow: $pt-dark-elevation-shadow-3 !default;

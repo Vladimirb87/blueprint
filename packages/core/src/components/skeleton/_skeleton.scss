@@ -38,7 +38,7 @@ Styleguide skeleton
 /* stylelint-disable declaration-no-important */
 .#{$ns}-skeleton {
   border-color: $skeleton-color-start !important;
-  border-radius: $pt-custom-2pixel;
+  border-radius:  rem(2px);
   box-shadow: none !important;
 
   // do not !important this for Firefox support

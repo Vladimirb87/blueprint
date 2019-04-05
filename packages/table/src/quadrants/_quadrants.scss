@@ -10,7 +10,7 @@ $table-quadrant-z-index-top-left: $table-quadrant-z-index-left + 1;
 // we mask the scrollable container with a smaller parent div to hide the scrollbars in the TOP,
 // LEFT, and TOP_LEFT quadrants. this value specifies the distance the scroll containers should
 // overflow within their parents; it should be large enough to hide a scrollbar of typical width.
-$table-quadrant-scroll-container-overflow: 20px;
+$table-quadrant-scroll-container-overflow:  rem(20px);
 
 .#{$ns}-table-quadrant-stack {
   display: flex;
@@ -105,11 +105,11 @@ $table-quadrant-scroll-container-overflow: 20px;
     overflow-x: hidden;
   }
 
-  // require at least 1px of width to show the left selection border if
+  // require at least  rem(1px) of width to show the left selection border if
   // necessary. this will be needed when selection includes cells in the first
   // column (#1444).
   .#{$ns}-table-body-virtual-client {
-    min-width: 1px;
+    min-width:  rem(1px);
   }
 }
 
@@ -128,6 +128,6 @@ $table-quadrant-scroll-container-overflow: 20px;
 
   // correct missing bottom-right corner in the menu-element (addresses #1444).
   .#{$ns}-table-body-virtual-client {
-    min-width: 1px;
+    min-width:  rem(1px);
   }
 }

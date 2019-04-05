@@ -14,11 +14,11 @@
   flex-shrink: 0;
   align-items: center;
   z-index: 1;
-  box-shadow: 0 1px $pt-divider-black;
+  box-shadow: 0  rem(1px) $pt-divider-black;
   height: $pt-grid-size * 3;
 
   .#{$ns}-dark & {
-    box-shadow: 0 1px $pt-dark-divider-white;
+    box-shadow: 0  rem(1px) $pt-dark-divider-white;
   }
 
   // two span children act as spacers to keep the title centered.
@@ -40,7 +40,7 @@
 
   .#{$ns}-icon {
     // reduce margins around icon so it fits better in tight header
-    margin: 0 $pt-custom-2pixel;
+    margin: 0  rem(2px);
   }
 }
 
@@ -50,8 +50,8 @@
   flex-direction: column;
 
   // border between panels, visible during transition
-  margin-right: -1px;
-  border-right: 1px solid $pt-divider-black;
+  margin-right: - rem(1px);
+  border-right:  rem(1px) solid $pt-divider-black;
 
   background-color: $white;
   overflow-y: auto;

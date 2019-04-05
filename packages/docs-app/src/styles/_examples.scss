@@ -58,7 +58,7 @@
 }
 
 #{example("MenuExample")} .#{$ns}-menu {
-  max-width: 280px;
+  max-width:  rem(280px);
 }
 
 #{example("TagExample")} {
@@ -76,7 +76,7 @@
   .context-menu-node {
     $node-size: $pt-grid-size * 8;
     $icon-size: $pt-icon-size-standard * 2;
-    $node-border-width: 4px;
+    $node-border-width:  rem(4px);
 
     border: $node-border-width solid $white;
     border-radius: 50%;
@@ -96,7 +96,7 @@
     }
 
     &.context-menu-open {
-      box-shadow: $pt-elevation-shadow-2, 0 0 0 4px $orange4;
+      box-shadow: $pt-elevation-shadow-2, 0 0 0  rem(4px) $orange4;
     }
   }
 }
@@ -126,8 +126,8 @@
 
     > div {
       margin-right: $pt-grid-size/2;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
+      border-bottom-left-radius:  rem(5px);
+      border-bottom-right-radius:  rem(5px);
       background-color: $white;
       width: $pt-grid-size * 8;
       height: $pt-grid-size * 24;
@@ -159,7 +159,7 @@
   .piano-key-text {
     position: absolute;
     right: 0;
-    bottom: 5px;
+    bottom:  rem(5px);
     left: 0;
     text-align: center;
   }
@@ -176,7 +176,7 @@
     align-items: center;
     justify-content: space-around;
     opacity: 0.4;
-    border: 2px solid rgba($gray3, 0.8);
+    border:  rem(2px) solid rgba($gray3, 0.8);
     border-radius: $pt-border-radius * 2;
     background: rgba($gray3, 0.2);
     max-width: 70%;
@@ -191,13 +191,13 @@
 
     &:focus {
       opacity: 1;
-      border: 2px solid rgba($blue3, 0.6);
+      border:  rem(2px) solid rgba($blue3, 0.6);
       background: rgba($blue3, 0.1);
       cursor: default;
       color: map-get($pt-intent-text-colors, "primary");
 
       .#{$ns}-dark & {
-        border: 2px solid rgba($blue4, 0.6);
+        border:  rem(2px) solid rgba($blue4, 0.6);
         background: rgba($blue4, 0.1);
         color: map-get($pt-dark-intent-text-colors, "primary");
       }
@@ -255,7 +255,7 @@
 #{example("PopoverExample")} {
   .docs-example {
     display: block;
-    max-height: 700px;
+    max-height:  rem(700px);
     overflow: scroll;
   }
 
@@ -264,8 +264,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1000px;
-    height: 1500px;
+    width:  rem(1000px);
+    height:  rem(1500px);
 
     > p {
       margin-top: $pt-grid-size;
@@ -274,10 +274,10 @@
 }
 
 #{example("PopoverDismissExample")} {
-  height: 220px;
+  height:  rem(220px);
 
   .docs-reopen-message {
-    width: 240px;
+    width:  rem(240px);
     text-align: center;
   }
 
@@ -297,8 +297,8 @@
 #{example("PanelStackExample")} {
   .docs-panel-stack-example {
     box-shadow: $pt-elevation-shadow-0;
-    width: 300px;
-    height: 240px;
+    width:  rem(300px);
+    height:  rem(240px);
   }
 
   .docs-panel-stack-contents-example {
@@ -306,11 +306,11 @@
     flex: 1 0 auto;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding:  rem(10px);
   }
 
   ul {
-    max-height: 240px;
+    max-height:  rem(240px);
     overflow: auto;
   }
 }
